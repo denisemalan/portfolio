@@ -1,0 +1,55 @@
+{
+  "site": { "name": "Denise Malan", "title": "Denise Malan | Technical Writer & Editor", "email": "malan.denise@gmail.com", "location": "Kansas City metro area",
+    "links": [{ "label": "GitHub", "url": "https://github.com/YOUR-USERNAME" }, { "label": "LinkedIn", "url": "https://www.linkedin.com/in/YOUR-PROFILE" }] },
+  "hero": {
+    "headline": "I make complex data and AI work easy to understand.",
+    "intro": "Technical writer and editor with a background in journalism, data science, and technical education. I turn analytical and scientific ideas into clear, accurate content for the people who need to use them."
+  },
+  "stats": [
+    { "value": "3,300+", "label": "professionals and students personally trained" },
+    { "value": "20+ yrs", "label": "writing, editing, and teaching" },
+    { "value": "M.S.", "label": "Data Science & Analytics, 4.0 GPA" }
+  ],
+  "lenses": [
+    { "id": "all", "label": "Everything" },
+    { "id": "technical-writing", "label": "Technical writer" },
+    { "id": "editing", "label": "Editor" },
+    { "id": "training", "label": "Trainer" },
+    { "id": "data", "label": "Data & AI" },
+    { "id": "journalism", "label": "Journalist" }
+  ],
+  "about": [
+    "I started as a newspaper reporter, became an investigative data editor, and spent six years teaching data skills to thousands of journalists. I now document an enterprise AI platform at Dataiku.",
+    "The through-line: I like working next to subject-matter experts, learning how things really work, and explaining them so the reader can act."
+  ],
+  "experience": [
+    { "org": "Dataiku", "title": "Senior Technical Writer", "dates": "Mar 2022 – Present", "tags": ["technical-writing", "editing", "data"],
+      "summary": "Documentation for an enterprise AI and machine learning platform.",
+      "bullets": ["Primary documentation owner for Generative AI features.", "Edit docs on machine learning, agents, data processing, and analytics for clarity and accuracy.", "Contribute to style guides, terminology governance, and review processes.", "Mentor junior writers; build videos, tutorials, and visual workflows."] },
+    { "org": "Investigative Reporters & Editors (IRE)", "title": "Deputy Executive Director (earlier: Senior Training Director, Training Director)", "dates": "Aug 2016 – Feb 2022", "tags": ["training", "editing", "journalism", "data"],
+      "summary": "Led training content and programs for thousands of journalism professionals.",
+      "bullets": ["Personally trained 3,300+ people in data analysis, coding, research methods, and visualization.", "Coached reporters and experts on communicating complex findings.", "Developed editorial standards, instructional guidelines, and review processes."] },
+    { "org": "Institute for Nonprofit News", "title": "Director of Training (earlier: Interim Executive Director, Director of Data Services)", "dates": "Jun 2013 – Aug 2016", "tags": ["training", "data", "journalism"],
+      "summary": "Training and data services for nonprofit newsrooms nationwide.",
+      "bullets": ["Ran webinars and an annual training event.", "Led the organization as interim executive director.", "Delivered data analysis and visualization projects."] },
+    { "org": "Corpus Christi Caller-Times", "title": "Data/Investigative Editor, Investigative Reporter, Reporter", "dates": "Jun 2006 – Jun 2013", "tags": ["journalism", "editing", "data"], "summary": "", "bullets": [] },
+    { "org": "The Morning News (Springdale, AR)", "title": "Reporter", "dates": "Oct 2003 – May 2006", "tags": ["journalism"], "summary": "", "bullets": [] }
+  ],
+  "writing": [
+    { "title": "Sample title: a Generative AI how-to guide", "type": "Documentation", "desc": "One or two sentences on the audience, your role, and the result. Replace this placeholder.", "url": "#", "tags": ["technical-writing", "data"] },
+    { "title": "Sample title: a style guide excerpt", "type": "Editorial standards", "desc": "Describe the problem the guide solved.", "url": "#", "tags": ["editing", "technical-writing"] },
+    { "title": "Sample title: a data-skills tutorial", "type": "Training", "desc": "Who it taught and what they could do afterward.", "url": "#", "tags": ["training", "data"] },
+    { "title": "Sample title: an investigative story", "type": "Journalism", "desc": "What the data showed and what changed.", "url": "#", "tags": ["journalism", "data"] }
+  ],
+  "skills": [
+    { "group": "Writing & editing", "items": ["Technical editing", "Copy editing", "Style guides", "Documentation governance", "Content strategy", "Writing coaching"] },
+    { "group": "AI, data & code", "items": ["Machine learning", "Generative AI", "Python", "R", "SQL", "Tableau"] },
+    { "group": "Docs tooling", "items": ["Git/GitHub", "Docs-as-code", "Markdown", "OpenAPI/Swagger"] }
+  ],
+  "education": [
+    "M.S., Data Science & Analytics, University of Missouri, 2019 (GPA 4.0, Visualization & Design)",
+    "B.A., Journalism & Physics, University of Arkansas, 2003 (Magna Cum Laude)",
+    "Certified Professional Technical Communicator – Foundation, STC, 2023",
+    "Instructional Design Course, STC, 2022"
+  ]
+}
