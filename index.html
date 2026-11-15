@@ -33,7 +33,7 @@ h1{font-size:clamp(2.1rem,5.5vw,3.4rem);max-width:17em;letter-spacing:-.01em}
 section{padding:56px 0 8px}
 h2{font-size:1.7rem;margin-bottom:24px}
 .item{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:22px 24px;margin-bottom:16px}
-.item.hide{display:none}
+.hide{display:none!important}
 .item h3{font-size:1.2rem}.meta{color:var(--muted);font-size:.9rem;margin:4px 0 10px}
 .item ul{margin:10px 0 0;padding-left:20px}.item p{margin:0}
 .badge{display:inline-block;background:var(--tint);color:var(--accent);font-size:.8rem;font-weight:600;padding:2px 10px;border-radius:99px;margin-bottom:8px}
@@ -66,6 +66,7 @@ const $=id=>document.getElementById(id);
 function el(tag,props={},kids=[]){const e=document.createElement(tag);for(const k in props){k==='text'?e.textContent=props[k]:e.setAttribute(k,props[k])}[].concat(kids).forEach(c=>e.append(c));return e}
 let current='all';
 function applyLens(){document.querySelectorAll('[data-tags]').forEach(n=>{n.classList.toggle('hide',current!=='all'&&!n.dataset.tags.split(' ').includes(current))});
+document.querySelectorAll('.skills .grid > div').forEach(g=>g.classList.toggle('hide',!g.querySelector('li:not(.hide)')));
 document.querySelectorAll('.chip').forEach(c=>c.setAttribute('aria-pressed',c.dataset.id===current))}
 fetch('content.json').then(r=>r.json()).then(d=>{
  document.title=d.site.title;$('nav-name').textContent=d.site.name;
@@ -76,7 +77,7 @@ fetch('content.json').then(r=>r.json()).then(d=>{
   if(x.summary)it.append(el('p',{text:x.summary}));
   if(x.bullets.length)it.append(el('ul',{},x.bullets.map(b=>el('li',{text:b}))));$('exp').append(it)});
  d.writing.forEach(w=>$('wr').append(el('article',{class:'item','data-tags':w.tags.join(' ')},[el('span',{class:'badge',text:w.type}),el('h3',{},[el('a',{href:w.url,text:w.title})]),el('p',{class:'meta',text:w.desc})])));
- d.skills.forEach(g=>$('sk').append(el('div',{},[el('h3',{text:g.group}),el('ul',{},g.items.map(i=>el('li',{text:i})))])));
+ d.skills.forEach(g=>$('sk').append(el('div',{},[el('h3',{text:g.group}),el('ul',{},g.items.map(i=>el('li',{text:i.name,'data-tags':i.tags.join(' ')})))])));
  d.about.forEach(p=>$('ab').append(el('p',{text:p})));
  d.education.forEach(e=>$('ed').append(el('li',{text:e})));
  $('ct').append(el('a',{href:'mailto:'+d.site.email,text:d.site.email}),' · '+d.site.location);
